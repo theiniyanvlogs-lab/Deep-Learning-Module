@@ -1,0 +1,12 @@
+Difference Between Neural Networks in Deep Learning
+
+| Neural Network | Full Form                      | Main Purpose                        | Best For                   | Example                      | Special Feature                                   |
+| -------------- | ------------------------------ | ----------------------------------- | -------------------------- | ---------------------------- | ------------------------------------------------- |
+| ANN            | Artificial Neural Network      | Basic learning and prediction       | Simple structured data     | Student pass/fail prediction | Simple network with input, hidden, output layers  |
+| CNN            | Convolutional Neural Network   | Image processing                    | Images & videos            | Cat vs dog detection         | Automatically detects image features              |
+| RNN            | Recurrent Neural Network       | Sequential data processing          | Text, speech, time series  | Next word prediction         | Remembers previous inputs                         |
+| LSTM           | Long Short-Term Memory         | Long sequence memory                | Long text/speech sequences | Chatbot conversations        | Avoids forgetting old information                 |
+| GAN            | Generative Adversarial Network | Generate new data                   | AI image/video generation  | Fake human face generation   | Two networks compete (Generator vs Discriminator) |
+| Transformer    | Transformer Network            | Understanding relationships in data | NLP, chatbots, translation | ChatGPT                      | Uses attention mechanism for better understanding |
+
+
