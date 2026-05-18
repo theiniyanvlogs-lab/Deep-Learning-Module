@@ -1,0 +1,91 @@
+Difference Between Machine Learning and Deep Learning (Simple)
+
+| Feature     | Machine Learning                                  | Deep Learning                                                       |
+| ----------- | ------------------------------------------------- | ------------------------------------------------------------------- |
+| Meaning     | Computer learns from data using simple algorithms | Computer learns using artificial neural networks (like human brain) |
+| Data Needed | Works with small or medium data                   | Needs very large data                                               |
+| Human Work  | Human gives important features manually           | Learns features automatically                                       |
+| Speed       | Faster to train                                   | Slower, needs powerful computers                                    |
+| Accuracy    | Good for simple problems                          | Better for complex problems like images and voice                   |
+
+
+====
+
+Simple Example
+1. Machine Learning Example
+Problem:
+
+Predict whether a student will pass or fail.
+
+Input Data:
+Study hours
+Attendance
+Internal marks
+How it works:
+
+You manually give these important details to the algorithm.
+
+Example:
+Study Hours = 8
+Attendance = 90%
+Internal Marks = 75
+
+Result → Pass
+
+Algorithms:
+
+Decision Tree
+Linear Regression
+Random Forest
+
+===========
+
+2. Deep Learning Example
+Problem:
+
+Face Recognition in mobile phone.
+
+Input:
+
+A photo of your face.
+
+How it works:
+
+The system automatically learns:
+
+Eyes
+Nose
+Face shape
+Patterns
+
+No need to manually tell features.
+
+Example:
+Input → Face Image
+Output → "Phone Unlocked"
+
+Uses:
+
+Self-driving cars
+Voice assistants
+Chatbots
+Image recognition
+Real Life Analogy
+=========
+
+
+Machine Learning
+
+Teacher gives important questions before exam.
+
+Student studies only those questions.
+======
+
+Deep Learning
+
+Student studies the whole book and finds important points automatically.
+======
+
+One-Line Difference
+
+Machine Learning needs human guidance for features, while Deep Learning learns features automatically using neural networks.
