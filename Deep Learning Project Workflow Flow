@@ -1,0 +1,268 @@
+Problem Identification
+        ↓
+Data Collection
+        ↓
+Data Preprocessing
+        ↓
+Data Annotation / Labeling
+        ↓
+Train-Test Split
+        ↓
+Input Dataset
+        ↓
+Model Selection
+        ↓
+Model Training
+        ↓
+Model Testing
+        ↓
+Performance Evaluation
+        ↓
+Model Optimization
+        ↓
+Save Trained Model
+        ↓
+Real-Time Deployment
+        ↓
+Prediction
+        ↓
+Alert / Action
+
+
+================
+
+
+1. Data Collection
+What is it?
+
+Collecting data required for the project.
+
+Sources
+Camera
+Sensors
+Mobile phone
+Kaggle datasets
+UCI Repository
+Google Dataset Search
+IoT Devices
+Excel/CSV files
+Example
+
+Face Mask Detection
+
+Images with mask
+Images without mask
+
+Garbage Detection
+
+Garbage bin images
+Empty bin images
+Overflow images
+Output
+Raw Data
+2. Data Preprocessing
+What is it?
+
+Cleaning and preparing data before training.
+
+Activities
+Data Cleaning
+Remove duplicate data
+Remove corrupted images
+Fix missing values
+Image Processing
+Resize images
+Convert color format
+Normalize pixels
+Labeling
+
+Example:
+
+mask       → 0
+no_mask    → 1
+
+or
+
+Garbage Full → 1
+Garbage Empty → 0
+Data Augmentation
+
+Increase dataset size using:
+
+Rotation
+Flip
+Zoom
+Brightness adjustment
+Tools
+Tool	Purpose
+OpenCV	Image Processing
+NumPy	Numerical Operations
+Pandas	Data Handling
+TensorFlow	Deep Learning
+Keras	Neural Networks
+Output
+Processed Dataset
+3. Input
+What is Input?
+
+The final dataset fed into the model.
+
+Example
+
+For Face Mask Detection:
+
+1000 Mask Images
+1000 No Mask Images
+Split Dataset
+
+Usually:
+
+Training = 80%
+Testing = 20%
+
+Example:
+
+Total Images = 2000
+
+Training = 1600
+Testing = 400
+Output
+Ready-to-Train Dataset
+4. Train
+What is Training?
+
+Teaching the model to learn patterns from data.
+
+Example
+
+Face Mask Detection:
+
+Model learns:
+
+Shape of mask
+Color patterns
+Face structure
+Algorithms
+Traditional ML
+SVM
+Random Forest
+KNN
+Decision Tree
+Deep Learning
+CNN
+MobileNetV2
+ResNet50
+VGG16
+EfficientNet
+Example Code Flow
+model.fit(
+    X_train,
+    y_train,
+    epochs=10
+)
+Output
+Trained Model
+5. Test
+What is Testing?
+
+Checking how well the model performs on unseen data.
+
+Example
+
+Input:
+
+New Face Image
+
+Output:
+
+Mask Detected
+
+or
+
+No Mask Detected
+Purpose
+
+To verify:
+
+Accuracy
+Reliability
+Performance
+6. Model
+What is a Model?
+
+The trained AI brain.
+
+Examples
+Project	Model
+Face Mask Detection	MobileNetV2
+Garbage Detection	YOLO
+Vehicle Detection	YOLOv8
+Fire Detection	CNN
+Attendance System	FaceNet
+Saved As
+model.h5
+model.keras
+model.pt
+7. Performance Evaluation
+What is Evaluation?
+
+Measuring model quality.
+
+Metrics
+Accuracy
+
+Formula:
+
+Accuracy=
+Total Predictions
+Correct Predictions
+	​
+
+×100
+
+Example:
+
+Correct = 95
+Total = 100
+
+Accuracy = 95%
+Precision
+
+Measures correct positive predictions.
+
+Formula:
+
+TP / (TP + FP)
+Recall
+
+Measures how many actual positives are detected.
+
+Formula:
+
+TP / (TP + FN)
+F1 Score
+
+Balance between Precision and Recall.
+
+Formula:
+
+2 × (Precision × Recall)
+-------------------------
+ Precision + Recall
+Confusion Matrix
+	Predicted Positive	Predicted Negative
+Actual Positive	TP	FN
+Actual Negative	FP	TN
+
+Where:
+
+TP = True Positive
+TN = True Negative
+FP = False Positive
+FN = False Negative
+
+============
+
+
+
+
