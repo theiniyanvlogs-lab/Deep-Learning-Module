@@ -1,0 +1,312 @@
+Complete Example (Face Mask Detection)
+Step 1
+
+Collect Images
+
+Mask Images
+No Mask Images
+Step 2
+
+Preprocess
+
+Resize → 224x224
+Normalize
+Label
+Step 3
+
+Input Dataset
+
+Train = 80%
+Test = 20%
+Step 4
+
+Train Model
+
+MobileNetV2
+Step 5
+
+Test
+
+New Camera Image
+Step 6
+
+Model Prediction
+
+Mask
+No Mask
+Step 7
+
+Evaluate
+
+Accuracy = 98%
+Precision = 97%
+Recall = 96%
+
+
+===========
+
+
+Problem Identification
+        ↓
+Data Collection
+        ↓
+Data Preprocessing
+        ↓
+Data Annotation / Labeling
+        ↓
+Train-Test Split
+        ↓
+Input Dataset
+        ↓
+Model Selection
+        ↓
+Model Training
+        ↓
+Model Testing
+        ↓
+Performance Evaluation
+        ↓
+Model Optimization
+        ↓
+Save Trained Model
+        ↓
+Real-Time Deployment
+        ↓
+Prediction
+        ↓
+Alert / Action
+
+=========
+
+Step 1: Problem Identification
+
+First decide what problem to solve.
+
+Examples
+Problem	Solution
+Face Mask Detection	Detect mask/no mask
+Garbage Overflow	Detect full bin
+Fire Detection	Detect fire
+Helmet Detection	Detect helmet
+Attendance System	Recognize faces
+Step 2: Data Collection
+
+Collect data.
+
+Sources
+Camera
+Mobile
+Kaggle
+Roboflow
+Google Images
+Sensors
+Existing Datasets
+Output
+Raw Data
+Step 3: Data Preprocessing
+
+Clean and prepare data.
+
+Activities
+Remove noise
+Resize images
+Normalize images
+Remove duplicates
+Handle missing values
+Output
+Clean Data
+Step 4: Data Annotation / Labeling
+
+Assign labels.
+
+Example
+Mask → 0
+No Mask → 1
+
+or
+
+Garbage Full → 1
+Garbage Empty → 0
+Tools
+LabelImg
+Roboflow
+CVAT
+Output
+Labeled Dataset
+Step 5: Train-Test Split
+
+Split dataset.
+
+Common:
+
+80% Training
+20% Testing
+
+or
+
+70% Training
+30% Testing
+Output
+Training Data
+Testing Data
+Step 6: Input Dataset
+
+Feed data to model.
+
+X_train
+Y_train
+Example
+Image → Mask
+Image → No Mask
+Step 7: Model Selection
+
+Choose algorithm.
+
+Machine Learning
+KNN
+SVM
+Random Forest
+Decision Tree
+Deep Learning
+CNN
+MobileNetV2
+ResNet50
+VGG16
+EfficientNet
+YOLO
+Step 8: Model Training
+
+Model learns patterns.
+
+Input Images
+        ↓
+Feature Learning
+        ↓
+Weight Update
+        ↓
+Training Complete
+Output
+Trained Model
+Step 9: Model Testing
+
+Test with unseen data.
+
+New Image
+      ↓
+Prediction
+
+Example:
+
+Mask Detected
+Step 10: Performance Evaluation
+
+Measure performance.
+
+Metrics
+Accuracy
+Precision
+Recall
+F1 Score
+Confusion Matrix
+
+Example:
+
+Accuracy = 98%
+Step 11: Model Optimization
+
+Improve performance.
+
+Techniques
+More Data
+Data Augmentation
+Hyperparameter Tuning
+Transfer Learning
+Better Architecture
+Step 12: Save Trained Model
+
+Save model.
+
+Examples:
+
+model.h5
+model.keras
+model.pt
+model.pkl
+Step 13: Real-Time Deployment
+
+Connect model to application.
+
+Platforms
+Web Application
+Mobile App
+CCTV Camera
+Raspberry Pi
+Edge Device
+Cloud Server
+Step 14: Prediction
+
+Real-time input.
+
+Camera
+    ↓
+Image
+    ↓
+Model
+    ↓
+Prediction
+Step 15: Alert / Action
+
+Take action.
+
+Examples
+
+Face Mask Detection
+
+No Mask
+    ↓
+Alarm
+
+Garbage Overflow
+
+Bin Full
+    ↓
+SMS Alert
+
+Fire Detection
+
+Fire Found
+    ↓
+Emergency Alert
+Final End-to-End Flow (Interview Answer)
+Problem Definition
+        ↓
+Data Collection
+        ↓
+Data Preprocessing
+        ↓
+Data Annotation
+        ↓
+Train-Test Split
+        ↓
+Model Selection
+        ↓
+Model Training
+        ↓
+Model Testing
+        ↓
+Performance Evaluation
+        ↓
+Model Optimization
+        ↓
+Model Saving
+        ↓
+Deployment
+        ↓
+Real-Time Prediction
+        ↓
+Alert / Action
+
+This is the complete industry-standard AI/ML/DL project lifecycle used in projects such as Face Mask Detection, Garbage Overflow Detection, Fire Detection, Vehicle Detection, Attendance Systems, and YOLO-based object detection systems.
+
+=========
+
