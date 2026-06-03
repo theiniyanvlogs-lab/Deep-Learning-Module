@@ -1,0 +1,106 @@
+Better Option: Run Face Mask Detection without Linux
+
+You can do the entire project using:
+
+Step 1: Google Colab
+Step 2: GitHub
+Step 3: Web App (Streamlit)
+
+This is actually easier on a Chromebook.
+
+Workflow
+Dataset
+   ↓
+Google Colab
+   ↓
+Train Model
+   ↓
+Save model.h5
+   ↓
+GitHub
+   ↓
+Streamlit Web App
+   ↓
+Deploy Online
+Step 1: Upload Project to GitHub
+
+Create a GitHub account if you don't have one.
+
+GitHub
+
+Create repository:
+
+Face-Mask-Detection
+
+Upload:
+
+dataset/
+train_mask_detector.py
+detect_mask_image.py
+detect_mask_video.py
+requirements.txt
+Step 2: Open Google Colab
+
+Google Colab
+
+Create notebook:
+
+!pip install tensorflow==2.10
+!pip install imutils
+!pip install opencv-python
+
+Upload dataset.
+
+Train model.
+
+Save:
+
+model.save("mask_detector.h5")
+
+Download:
+
+from google.colab import files
+files.download("mask_detector.h5")
+Step 3: Create Streamlit Web App
+
+Create:
+
+# app.py
+
+import streamlit as st
+import cv2
+import numpy as np
+from tensorflow.keras.models import load_model
+
+model = load_model("mask_detector.h5")
+
+st.title("Face Mask Detection")
+
+image = st.file_uploader("Upload Image")
+
+if image:
+    st.image(image)
+Step 4: Upload to GitHub
+
+Repository structure:
+
+Face-Mask-Detection/
+│
+├── app.py
+├── mask_detector.h5
+├── requirements.txt
+└── README.md
+Step 5: Deploy Free
+
+Use:
+
+Streamlit Community Cloud
+
+Connect GitHub repository.
+
+Deploy.
+
+You get:
+
+https://your-project.streamlit.app
+Recommended for your final project
