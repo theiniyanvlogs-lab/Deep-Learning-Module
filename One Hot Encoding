@@ -1,0 +1,112 @@
+One-Hot Encoding:
+
+lb = LabelBinarizer()
+labels = lb.fit_transform(labels)
+labels = to_categorical(labels)
+What is One-Hot Encoding?
+
+Computers cannot understand text labels directly.
+
+Example:
+
+mask
+no_mask
+
+We convert them into numbers.
+
+Before One-Hot Encoding
+mask     = 0
+no_mask  = 1
+
+Dataset:
+
+0
+1
+0
+1
+After One-Hot Encoding
+0 → [1, 0]
+1 → [0, 1]
+
+Result:
+
+mask     → [1, 0]
+no_mask  → [0, 1]
+Why do we use it?
+
+If we keep:
+
+mask = 0
+no_mask = 1
+
+The model may think:
+
+1 > 0
+
+and assume one class is "larger" than the other.
+
+But actually:
+
+mask and no_mask are just categories
+
+One-Hot Encoding removes this problem.
+
+Example
+Original Labels
+labels = ['mask', 'no_mask', 'mask']
+Label Encoding
+[0, 1, 0]
+One-Hot Encoding
+[
+ [1,0],
+ [0,1],
+ [1,0]
+]
+In Face Mask Detection
+Class	Label	One-Hot
+Mask	0	[1,0]
+No Mask	1	[0,1]
+
+When the model predicts:
+
+[0.95, 0.05]
+
+means
+
+95% Mask
+5% No Mask
+
+Prediction:
+
+Mask
+Real-Time Example
+
+Suppose camera captures a face.
+
+Model output:
+
+prediction = [0.12, 0.88]
+
+Interpretation:
+
+12% Mask
+88% No Mask
+
+Result:
+
+No Mask Detected
+Flow in Your Project
+Image
+  ↓
+Label (mask / no_mask)
+  ↓
+Label Encoding
+  ↓
+One-Hot Encoding
+  ↓
+Train Model
+  ↓
+Prediction
+Interview Answer (1 Line)
+
+One-Hot Encoding is a technique used to convert categorical class labels into binary vector format so that Deep Learning models can process and classify them correctly.
