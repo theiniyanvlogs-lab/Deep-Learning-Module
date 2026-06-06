@@ -1,0 +1,17 @@
+This slide is about Generative Adversarial Networks (GANs), a popular Deep Learning model used to create new images, videos, faces, artwork, and more.
+
+What is GAN?
+
+GAN consists of two neural networks:
+
+Generator
+Creates fake images.
+Tries to make them look real.
+Discriminator
+Checks whether an image is real or fake.
+Acts like a judge.
+
+Both networks compete with each other, and over time the Generator becomes very good at creating realistic images.
+
+=====
+
